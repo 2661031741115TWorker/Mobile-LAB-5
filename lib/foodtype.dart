@@ -1,15 +1,13 @@
-// lib/models/food_models.dart
-
 enum FoodType {
-  steak,
+  sidedish,
   maindish,
   dessert,
   beverage;
 
   String get ty {
     switch (this) {
-      case FoodType.steak:
-        return 'สเต็ก';
+      case FoodType.sidedish:
+        return 'อาหารทานเล่น';
       case FoodType.maindish:
         return 'อาหารจานเดียว';
       case FoodType.dessert:
@@ -52,9 +50,45 @@ class FoodMenu {
 
 List<FoodMenu> emp = [
   FoodMenu(
-      name: "สเต็กเนื้อ",
-      component: "เนื้อสันใน",
-      price: 250,
+      name: "แพนเค้ก",
+      component: "แป้ง, เนย, น้ำผึ้ง",
+      price: 120,
       foodpic: Foodpic.menu1,
-      foodType: FoodType.steak)
+      foodType: FoodType.dessert),
+  FoodMenu(
+      name: "ซูชิแซลมอน",
+      component: "ข้าวญี่ปุ่น, ปลาแซลมอน",
+      price: 180,
+      foodpic: Foodpic.menu2,
+      foodType: FoodType.sidedish),
+  FoodMenu(
+      name: "คัพเค้ก",
+      component: "แป้ง, ครีม, น้ำตาล",
+      price: 65,
+      foodpic: Foodpic.menu3,
+      foodType: FoodType.dessert),
+  FoodMenu(
+      name: "ทาโก้",
+      component: "แป้งทาโก้, เนื้อบด, ผัก",
+      price: 95,
+      foodpic: Foodpic.menu4,
+      foodType: FoodType.maindish),
+  FoodMenu(
+      name: "ข้าวปั้นโอนิกิริ",
+      component: "ข้าวญี่ปุ่น, สาหร่าย",
+      price: 45,
+      foodpic: Foodpic.menu5,
+      foodType: FoodType.sidedish),
+  FoodMenu(
+      name: "สลัดผักรวม",
+      component: "ผักสลัด, มะเขือเทศ, หัวหอม",
+      price: 159,
+      foodpic: Foodpic.menu6,
+      foodType: FoodType.sidedish),
+  FoodMenu(
+      name: "ฮอทดอก",
+      component: "ขนมปัง, ไส้กรอก, ซอส",
+      price: 70,
+      foodpic: Foodpic.menu7,
+      foodType: FoodType.maindish),
 ];

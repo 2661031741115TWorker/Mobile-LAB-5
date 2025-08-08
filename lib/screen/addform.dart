@@ -14,7 +14,7 @@ class _AddFormState extends State<AddForm> {
   String _name = '';
   String _component = '';
   int _price = 0;
-  FoodType _foodType = FoodType.steak;
+  FoodType _foodType = FoodType.sidedish;
   Foodpic _foodpic = Foodpic.menu1;
 
   @override
